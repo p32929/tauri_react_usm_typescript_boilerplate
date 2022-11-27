@@ -1,8 +1,9 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid } from "@material-ui/core";
+import { Grid, IconButton, Typography } from "@material-ui/core";
 import { useSelector } from 'react-redux';
 import { controller } from './utils/AppStates';
+import SvgIconRenderer from './helpers/SvgIconRenderer';
 
 interface Props {
 
@@ -24,10 +25,20 @@ const App: React.FC<Props> = (props) => {
   // JSX
 
   return (
-    <Grid container>
-      <button onClick={() => {
+    <Grid style={{ padding: 32 }} container direction='column' justifyContent='center' alignContent='center' alignItems='center'>
+      <Typography>counter: {states.counter}</Typography>
+      <IconButton onClick={() => {
         controller.increase()
-      }}>{states.counter}</button>
+      }}>
+        <SvgIconRenderer path='M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z' />
+      </IconButton>
+
+      <IconButton onClick={() => {
+        controller.decrease()
+      }}>
+        <SvgIconRenderer path='M19,13H5V11H19V13Z' />
+      </IconButton>
+
     </Grid>
   )
 
