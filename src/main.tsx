@@ -4,8 +4,8 @@ import "./style.css";
 import { ThemeProvider } from '@material-ui/core/styles';
 import App from "./App";
 import { Provider } from "react-redux";
-import { store } from "./urils/AppStates";
-import { theme } from "./urils/Theme";
+import { store } from "./utils/AppStates";
+import { theme } from "./utils/Theme";
 
 ReactDOM.render(
   <Provider store={store}>
