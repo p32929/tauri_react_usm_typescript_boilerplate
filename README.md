@@ -1,14 +1,14 @@
 # tauri_react_usm_typescript_boilerplate
 
-A Tauri desktop app starter with React, TypeScript, Material-UI and usm-redux state — a few MB of binary instead of a bundled browser.
+A starter template for desktop apps with Tauri, React, TypeScript, Material-UI and usm-redux. Electron apps ship a whole browser and end up with big downloads. Tauri uses the system's own webview and a small Rust core, so your app stays a few MB, and this template gives you that setup ready to go.
 
 ## What's included
 
-- **Tauri** — Rust backend, native webview, tiny binaries
-- **Vite + React + TypeScript** on the front end
-- **Material-UI** components
-- **usm-redux** state on top of `react-redux` — classes instead of reducer boilerplate
-- **`@tauri-apps/api`** already wired, so calling into Rust is one import away
+1. **Tauri:** a Rust backend and the system's native webview, for small and fast desktop apps.
+2. **Vite, React and TypeScript** on the front end.
+3. **Material-UI** components.
+4. **usm-redux** state on top of `react-redux`: you write classes instead of reducer boilerplate.
+5. **`@tauri-apps/api`** is installed, so you can call into Rust from React when you need to.
 
 ## Project layout
 
@@ -20,49 +20,37 @@ vite.config.ts       Vite config
 
 ## Getting started
 
+First install the [Tauri prerequisites](https://tauri.app/start/prerequisites/): a Rust toolchain and your system's webview packages. Then:
+
 ```bash
 git clone https://github.com/p32929/tauri_react_usm_typescript_boilerplate.git
 cd tauri_react_usm_typescript_boilerplate
 npm install
 
 npm run tauri dev     # run the desktop app
-npm run tauri build   # produce an installer for your OS
+npm run tauri build   # make an installer for your system
 ```
 
-You'll need the [Tauri prerequisites](https://tauri.app/start/prerequisites/) (a Rust toolchain and your platform's webview deps) before the first run.
+> It uses Tauri 1 and Vite 3. To start on Tauri 2, follow Tauri's own upgrade guide after cloning.
 
-## Recommended IDE setup
+## Recommended editor setup
 
-[VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+[VS Code](https://code.visualstudio.com/) with the [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) and [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer) extensions.
 
-## Related boilerplates
+## Related templates
 
-- [pomota](https://github.com/p32929/pomota) — a finished app built on this shape
-- [electron-shadcn-typescript](https://github.com/p32929/electron-shadcn-typescript) — the Electron equivalent, with shadcn/ui
-- [react_typescript_materialui_usm_boilerplate](https://github.com/p32929/react_typescript_materialui_usm_boilerplate) — the web-only version of this stack
+1. [pomota](https://github.com/p32929/pomota): a finished app built on this setup.
+2. [electron-shadcn-typescript](https://github.com/p32929/electron-shadcn-typescript): the Electron version, with shadcn/ui.
+3. [react_typescript_materialui_usm_boilerplate](https://github.com/p32929/react_typescript_materialui_usm_boilerplate): the web-only version of this stack.
 
 ## Contributing
 
-Contributions are warmly welcomed and greatly appreciated! Whether it's a bug fix, new feature, or improvement, your input helps make this project better for everyone.
-
-Before submitting a pull request, please:
-
-1. Create an issue describing the feature or bug fix you'd like to work on
-2. Wait for discussion and approval to ensure alignment with project goals
-3. Fork the repository and create your feature branch
-4. Submit your pull request with a clear description of changes
-
-This approach helps avoid duplicate efforts and ensures smooth collaboration. Thank you for considering contributing!
+Contributions are very welcome, thank you! Before you start on a pull request, please open an issue and tell me what you would like to add or change. That way we can agree on it first, and your time is not wasted on something that might not fit. Thanks for helping make this template better.
 
 ## Share
 
-Sharing this repository with your friends is just one click away from here
+<a href="https://p32929.github.io/share/?repo=tauri_react_usm_typescript_boilerplate"><img src="https://p32929.github.io/readme/share.svg" alt="Share this with your friends in just a click" width="420"></a>
 
-[![facebook](https://user-images.githubusercontent.com/6418354/179013321-ac1d1452-0689-493f-9066-940cf2302b6e.png)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/p32929/tauri_react_usm_typescript_boilerplate/)
-[![twitter](https://user-images.githubusercontent.com/6418354/179013351-7d8d6d1c-4ce2-46ab-bef8-4c4765a1b888.png)](https://twitter.com/intent/tweet?url=https://github.com/p32929/tauri_react_usm_typescript_boilerplate/)
-[![tumblr](https://user-images.githubusercontent.com/6418354/179013343-3111f55a-3b90-40c7-8487-9777348672b0.png)](https://www.tumblr.com/share?v=3&u=https://github.com/p32929/tauri_react_usm_typescript_boilerplate/)
-[![pocket](https://user-images.githubusercontent.com/6418354/179013334-b095c45f-becf-49f4-9ee1-5a731a9b1f85.png)](https://getpocket.com/save?url=https://github.com/p32929/tauri_react_usm_typescript_boilerplate/)
-[![pinterest](https://user-images.githubusercontent.com/6418354/179013331-44cd9206-11b1-4b65-becb-5863b61c828f.png)](https://pinterest.com/pin/create/button/?url=https://github.com/p32929/tauri_react_usm_typescript_boilerplate/)
-[![reddit](https://user-images.githubusercontent.com/6418354/179013338-7416ae3f-73ba-4522-86e1-1374d7082d22.png)](https://www.reddit.com/submit?url=https://github.com/p32929/tauri_react_usm_typescript_boilerplate/)
-[![linkedin](https://user-images.githubusercontent.com/6418354/179013327-ca7b7102-1da8-4b1c-858f-1a6e5f21bd70.png)](https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/p32929/tauri_react_usm_typescript_boilerplate/)
-[![whatsapp](https://user-images.githubusercontent.com/6418354/179013353-f477fa0b-3e6f-4138-a357-c9991b23ff88.png)](https://api.whatsapp.com/send?text=https://github.com/p32929/tauri_react_usm_typescript_boilerplate/)
+## Support
+
+<a href="https://p32929.github.io/support/"><img src="https://p32929.github.io/readme/support.svg" alt="If you like my works and want to support me, feel free to support" width="420"></a>
